@@ -100,6 +100,7 @@ Usa i bottoni in alto per filtrare:
 
 ## 📂 Struttura Progetto
 
+```
 task-manager/
 ├── src/
 │ ├── components/ # Componenti React
@@ -123,6 +124,7 @@ task-manager/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+```
 
 
 ## 🎨 Features Tecniche
@@ -139,6 +141,7 @@ const [tasks, setTasks] = useLocalStorage<Task[]>('tasks', []);
 
 Interfacce TypeScript complete per ogni entità:
 
+```
 interface Task {
   id: number;
   nome: string;
@@ -147,7 +150,7 @@ interface Task {
   dataCreazione: Date;
   dataModifica: Date;
 }
-
+```
 
 ### Responsive Grid
 

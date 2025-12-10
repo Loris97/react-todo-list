@@ -11,7 +11,7 @@
 
 Task Manager è un'applicazione web moderna sviluppata con React e TypeScript che permette di organizzare e gestire i propri task in modo efficiente. L'app offre un'interfaccia pulita e responsive con persistenza dei dati tramite localStorage.
 
-![Screenshot](docs/screenshot-desktop.jpg)
+![Screenshot](docs/screenshot-desktop.PNG)
 
 ### ✨ Features Principali
 
@@ -60,7 +60,6 @@ npm install
 Avvia il dev server
 npm run dev
 
-text
 
 L'applicazione sarà disponibile su `http://localhost:5173`
 
@@ -72,7 +71,6 @@ npm run build
 Preview della build
 npm run preview
 
-text
 
 ## 📖 Utilizzo
 
@@ -118,7 +116,7 @@ task-manager/
 │ ├── App.css # Stili globali
 │ ├── main.tsx # Entry point
 │ └── index.css # Reset CSS
-├── docs/ # Screenshot e docs
+├── docs/ # Screenshot e documentazione
 │ └── screenshot-desktop.jpg
 ├── public/ # Asset statici
 ├── package.json
@@ -126,7 +124,6 @@ task-manager/
 ├── vite.config.ts
 └── README.md
 
-text
 
 ## 🎨 Features Tecniche
 
@@ -136,22 +133,21 @@ Hook personalizzato per gestire lo stato sincronizzato con localStorage:
 
 const [tasks, setTasks] = useLocalStorage<Task[]>('tasks', []);
 
-text
+
 
 ### Type Safety
 
 Interfacce TypeScript complete per ogni entità:
 
 interface Task {
-id: number;
-nome: string;
-completata: boolean;
-categoria?: string;
-dataCreazione: Date;
-dataModifica: Date;
+  id: number;
+  nome: string;
+  completata: boolean;
+  categoria?: string;
+  dataCreazione: Date;
+  dataModifica: Date;
 }
 
-text
 
 ### Responsive Grid
 
@@ -183,7 +179,6 @@ npx tsc --noEmit
 Build test
 npm run build
 
-text
 
 ## 📝 Licenza
 
